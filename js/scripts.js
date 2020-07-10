@@ -85,10 +85,10 @@ $(function () {
         document.addEventListener("click", function () {
             if (isLoaded == false) {
             
-                start.setAttribute('geometry', {
-                        height: 0, 
-                        width: 0
-                });
+//                start.setAttribute('geometry', {
+//                        height: 0, 
+//                        width: 0
+//                });
                   
                 var videoEl = document.querySelector('#video');
                 videoEl.play();
@@ -109,7 +109,7 @@ $(function () {
      //Video Time to pause
         var pausing_function = function () {
             var video = document.getElementById("video");
-            if (video.currentTime >= 12.9) {
+            if (video.currentTime >= 25) {
                 
                 //Shows confessions and animates in
                 document.querySelectorAll(".confession-item") 
@@ -138,7 +138,7 @@ $(function () {
         //load More confessions
         var load_function = function () {
             var video = document.getElementById("video");
-            if (video.currentTime >= 45) {
+            if (video.currentTime >= 70) {
                 
                     $(".home-page").fadeOut("slow", function () {
                         window.location.href = "/confessions";
@@ -152,7 +152,7 @@ $(function () {
         //Video end loop
         var loop_function = function () {
             var video = document.getElementById("video");
-            if (video.currentTime >= 12.9) {
+            if (video.currentTime >= 38.29) {
                 if (looping){
                     console.log("Looping");
                     video.currentTime = 0;

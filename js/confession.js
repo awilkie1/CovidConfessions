@@ -95,13 +95,15 @@ var confession = function () {
         var audioClipExt = "mp3";
         var audioClipLength = 30;
         var audioClipFiles = [];
-        var audioClipIndex = 1;
+        var audioClipIndex = Math.floor(Math.random() * audioClipLength);
         var audioClipIntervalTime = 30; //In seconds
         
         for(var i = 1; i <= audioClipLength; i++) {
             audioClipFiles.push(audioCliplocation + "/" + audioClipPrefix + i + "." + audioClipExt);
         }
-
+        var x = document.getElementById("audio_2"); 
+        x.play(); 
+                  
         //Play Initial Audio Clip
         var audioPlayer = new Audio(audioClipFiles[audioClipIndex + 1]);
         audioPlayer.play();

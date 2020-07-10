@@ -86,14 +86,14 @@ mysqli_close($conn);
                      background="color: #FAFAFA" cursor-listener>
                 
 
-                <a-camera id="camera" rotation="0 180 0" look-controls animation="property: rotation; to:0 180 0; dur: 13000; easing: easeOutSine;"> 
+                <a-camera id="camera" rotation="0 180 0" look-controls animation="property: rotation; to:0 180 0; dur: 39000; easing: easeOutSine;"> 
                 </a-camera>
 
 
                 <a-assets>
                     <video id="video" preload="" loop="false" crossorigin="anonymous" playsinline=""
-                           webkit-playsinline="" src="video/room.mp4">
-                       <source src="video/room.mp4" type="video/mp4">
+                           webkit-playsinline="" src="video/video.mp4">
+                       <source src="video/video.mp4" type="video/mp4">
                     </video>
 <!--                    <img id="ACE" src="images/ACE.png">-->
                 </a-assets>
@@ -114,10 +114,10 @@ mysqli_close($conn);
                 
                 <a-entity id="instructions">
                     <a-text id="instructions__text" align="center" baseline="bottom" value="This scene is interactive" color="white" wrap-count="25" position="0 -1 -6" opacity="0" 
-                    animation="property: opacity; to: 0; dur: 3000; easing: easeInOutBack; loop:6; dir:alternate;"
+                    animation="property: opacity; to: 0; dur: 3000; easing: easeInOutBack; loop:4; dir:alternate;"
                     ></a-text>
                     <a-text id="instructions__mouse" align="center" baseline="bottom" value="Use your mouse to explore!" color="white" wrap-count="25" position="0 -1.5 -6" opacity="0" 
-                    animation="property: opacity; to: 0; dur: 3000; delay: 1000; easing: easeInOutBack; loop:6; dir:alternate;"
+                    animation="property: opacity; to: 0; dur: 3000; delay: 1000; easing: easeInOutBack; loop:4; dir:alternate;"
                     ></a-text>
                 </a-entity>
                 

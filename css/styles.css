@@ -58,11 +58,11 @@
     opacity: 1;
   }
   30% {
-    letter-spacing: 1em;
+    letter-spacing: 0.5em;
     opacity: 0;
   }
   100% {
-    letter-spacing: 3em;
+    letter-spacing: 2em;
     opacity: 0;
   }
 }
@@ -203,6 +203,33 @@ body, html {
   color: #FFF;
 }
 .confessions-page__back-btn a p {
+  margin-top: 0.5em !important;
+}
+
+.confessions-page__back-btn a:hover {
+  color: #d630e9;
+  text-decoration: none;
+}
+.confessions-page__back-btn a:hover .uk-icon:hover {
+  color: #d630e9;
+}
+
+.confessions-page__info {
+  position: fixed;
+  top: 2rem;
+  right: 0.5rem;
+  color: white;
+}
+.confessions-page__info .uk-icon {
+  margin-right: 0.5em;
+}
+.confessions-page__info a {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #FFF;
+}
+.confessions-page__info a p {
   margin-top: 0.5em !important;
 }
 

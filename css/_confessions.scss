@@ -23,6 +23,7 @@ body, html {
   
   .uk-icon {
     //color: white;
+    //margin-right: 0.5em;
   }
         
   a {
@@ -51,7 +52,43 @@ body, html {
 
 
     }
+.confessions-page__info {
+  position: fixed;
+  top: 2rem;
+  right: .5rem;
+  color: white;
+    
+  .uk-icon {
+    margin-right: 0.5em;
+  }
+          
+  a {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: #FFF;
+          
 
+          p {
+              margin-top: 0.5em !important;
+
+          }
+
+      }
+
+    }
+
+    .confessions-page__back-btn 
+        a:hover {
+        color: rgb(214, 48, 233);
+        text-decoration: none;
+
+        .uk-icon:hover {
+        color: rgb(214, 48, 233);
+        }
+
+
+    }
 .confessions-page__wrapper {
   max-width: 80vw;
   min-width: 40vw;

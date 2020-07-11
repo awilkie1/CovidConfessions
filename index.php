@@ -91,11 +91,10 @@ mysqli_close($conn);
 
 
                 <a-assets>
-                    <video id="video" preload="" loop="false" crossorigin="anonymous" playsinline=""
+                     <video id="video" loop="false" crossorigin="anonymous" playsinline=""
                            webkit-playsinline="" src="video/video.mp4">
                        <source src="video/video.mp4" type="video/mp4">
                     </video>
-<!--                    <img id="ACE" src="images/ACE.png">-->
                 </a-assets>
                 <a-videosphere src="#video" rotation="0 270 0"></a-videosphere>
               

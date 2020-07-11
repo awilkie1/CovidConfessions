@@ -23,54 +23,6 @@ mysqli_close($conn);
 ?>
     <audio id="audio_1" src="../audio/confessions_intro_1.mp3"></audio>
 
-    <script>
-
-        function fullscreen() {
-            //videoEl.setAttribute('rotation', {x: 0, y: 180, z: 0});
-            var isInFullScreen = (document.fullscreenElement && document.fullscreenElement !== null) ||
-                (document.webkitFullscreenElement && document.webkitFullscreenElement !== null) ||
-                (document.mozFullScreenElement && document.mozFullScreenElement !== null) ||
-                (document.msFullscreenElement && document.msFullscreenElement !== null);
-
-            var docElm = document.documentElement;
-            if (!isInFullScreen) {
-                if (docElm.requestFullscreen) {
-                    docElm.requestFullscreen();
-                } else if (docElm.mozRequestFullScreen) {
-                    docElm.mozRequestFullScreen();
-                } else if (docElm.webkitRequestFullScreen) {
-                    docElm.webkitRequestFullScreen();
-                } else if (docElm.msRequestFullscreen) {
-                    docElm.msRequestFullscreen();
-                }
-            } else {
-                if (document.exitFullscreen) {
-                    document.exitFullscreen();
-                } else if (document.webkitExitFullscreen) {
-                    document.webkitExitFullscreen();
-                } else if (document.mozCancelFullScreen) {
-                    document.mozCancelFullScreen();
-                } else if (document.msExitFullscreen) {
-                    document.msExitFullscreen();
-                }
-            }
-        }
-        
-        AFRAME.registerComponent('start', {
-            schema: {
-              default: ''
-            },
-            init() {
-              const start = document.querySelector('#start');
-              var b = false
-              this.el.addEventListener('click', () => {
-              });
-            }
-          });
-                
-    </script>
-
-
     <div class="home-page">
 
         <div class="home-page__wrapper">
@@ -117,6 +69,10 @@ mysqli_close($conn);
                     ></a-text>
                     <a-text id="instructions__mouse" align="center" baseline="bottom" value="Use your mouse to explore!" color="white" wrap-count="25" position="0 -1.5 -6" opacity="0" 
                     animation="property: opacity; to: 0; dur: 3000; delay: 1000; easing: easeInOutBack; loop:4; dir:alternate;"
+                    ></a-text>
+                    
+                    <a-text id="instructions__wait" align="center" baseline="bottom" value="Thank For Your Confession" color="white" wrap-count="25" position="0 0 -6" opacity="0" 
+                    animation="property: opacity; to: 0; dur: 3000; easing: easeInOutBack; loop:4; dir:alternate;"
                     ></a-text>
                 </a-entity>
                 

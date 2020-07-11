@@ -58,7 +58,8 @@ $(function () {
                 });
             
             document.getElementById('instructions__text').setAttribute('animation', 'to: 0');
-            document.getElementById('instructions__mouse').setAttribute('animation__2', 'to: 0');
+            document.getElementById('instructions__mouse').setAttribute('animation', 'to: 0');
+            document.getElementById('instructions__wait').setAttribute('animation', 'to: 1');
         }
 
         //Character limit

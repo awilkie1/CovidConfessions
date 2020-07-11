@@ -9,7 +9,7 @@
 include("includes/header.php");
 ?>
 
-<audio id="audio_2" autoplay loop src="../audio/background.mp3"></audio>
+<audio id="audio_2" loop src="../audio/background.mp3"></audio>
 
 <div class="confessions-page__back-btn">
     <a href="/">
